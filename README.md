@@ -94,8 +94,8 @@ PRIMARY KEY (stationId).
     
 # Rest Apis. 
 - There are three Rest Apis as per the requirements:  
-1. TrainsOnDepartureDay  
-2. TrainsOnArrivalDay  
+1. trainsOnDepartureDay  
+2. trainsOnArrivalDay  
 3. stations  
   
 - TrainsOnDepartureDay : RESTful API method for getting all trains available on given departure day and between particular time range.  
