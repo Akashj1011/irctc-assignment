@@ -14,8 +14,6 @@ public class TrainInfoService {
     private TrainInfoDao bookingTrainInfoDao;
     @Autowired
     private Util util;
-    @Autowired
-    private StationRespository stationRespository;
 
     private static final Logger logger = LoggerFactory.getLogger(TrainInfoService.class);
 
