@@ -117,12 +117,12 @@ PRIMARY KEY (stationId).
    
 - stations : RESTful API method for getting all the Station Names. 
 
-<img width="1069" alt="Screenshot 2020-11-04 at 12 37 43 AM" src="https://user-images.githubusercontent.com/21036288/98036500-24425800-1e40-11eb-8da5-5b11cab7c3ca.png">
-<img width="1090" alt="Screenshot 2020-11-04 at 12 40 06 AM" src="https://user-images.githubusercontent.com/21036288/98036510-286e7580-1e40-11eb-9381-692ab340f6e1.png">
-<img width="1082" alt="Screenshot 2020-11-04 at 12 40 23 AM" src="https://user-images.githubusercontent.com/21036288/98036511-29070c00-1e40-11eb-96da-f965380bb958.png">
-<img width="1084" alt="Screenshot 2020-11-04 at 12 42 40 AM" src="https://user-images.githubusercontent.com/21036288/98036512-299fa280-1e40-11eb-9b8f-f8fd6bd1b008.png">
-<img width="1086" alt="Screenshot 2020-11-04 at 12 42 57 AM" src="https://user-images.githubusercontent.com/21036288/98036513-2a383900-1e40-11eb-94b5-5ecdf9565dab.png">
-<img width="1076" alt="Screenshot 2020-11-04 at 12 43 10 AM" src="https://user-images.githubusercontent.com/21036288/98036514-2ad0cf80-1e40-11eb-9f64-5b74f4961765.png">
+<img width="1146" alt="Screenshot 2020-11-04 at 2 43 06 AM" src="https://user-images.githubusercontent.com/21036288/98041849-9c148080-1e48-11eb-8d3e-d12fc3c255ec.png">
+<img width="1134" alt="Screenshot 2020-11-04 at 2 43 23 AM" src="https://user-images.githubusercontent.com/21036288/98041861-a0409e00-1e48-11eb-9e7c-90a627eb700d.png">
+<img width="1091" alt="Screenshot 2020-11-04 at 2 43 34 AM" src="https://user-images.githubusercontent.com/21036288/98041864-a0d93480-1e48-11eb-91e0-64eb3d3d9393.png">
+<img width="1093" alt="Screenshot 2020-11-04 at 2 43 47 AM" src="https://user-images.githubusercontent.com/21036288/98041866-a171cb00-1e48-11eb-8b42-029bdbf45251.png">
+<img width="1090" alt="Screenshot 2020-11-04 at 2 44 05 AM" src="https://user-images.githubusercontent.com/21036288/98041867-a20a6180-1e48-11eb-9c2a-693e96b77ad5.png">
+<img width="1081" alt="Screenshot 2020-11-04 at 2 44 55 AM" src="https://user-images.githubusercontent.com/21036288/98041869-a2a2f800-1e48-11eb-862e-50c170ff5ed0.png">
 
 
 # Code Structure
