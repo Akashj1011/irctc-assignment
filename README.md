@@ -24,12 +24,12 @@ CREATE TABLE irctc.schedule (
     
   This table basically stores all the information of all the trains from given source to destination.  
     
-  scheduleId: Primary Key. 
-  journeyId: Suppose the train is from Kolkata to Ahmedabad. So the stops in between are Kolkata-->Patna-->Lucknow-->Indore-->Delhi-->Ahmedabad. So for all the       schedule eq: from Kolkata-->Indore or Delhi-->Ahmedabad the journeyId will be same. It can be used to know all the schedules for a given journey. It can also be   used when the train is delayed and the timings for all the subsequent departures and arrrivals needed to be changed.
-  trainId : Foreign key from train table. It gives information about the train.
-  sourceStation: station from where passenger needs to depart.  
-  destinationStation : station from where passenger needs to arrive.  
-  departureTime : Time when trains comes at source station.  
+  scheduleId: Primary Key.    
+  journeyId: Suppose the train is from Kolkata to Ahmedabad. So the stops in between are Kolkata-->Patna-->Lucknow-->Indore-->Delhi-->Ahmedabad. So for all the       schedule eq: from Kolkata-->Indore or Delhi-->Ahmedabad the journeyId will be same. It can be used to know all the schedules for a given journey. It can also be   used when the train is delayed and the timings for all the subsequent departures and arrrivals needed to be changed.   
+  trainId : Foreign key from train table. It gives information about the train.   
+  sourceStation: station from where passenger needs to depart.    
+  destinationStation : station from where passenger needs to arrive.    
+  departureTime : Time when trains comes at source station.    
   arrivalTime : Time when trains arrives at destination station.  
   timeTaken : Time taken from source to destination station.  
   departureDayOfWeek: As we know, most of the trains are running on weekly basis like weekly once or twice. So instead of saving any static timestamp which needs     to be changed every week what we can do is we can store the day of the week when train will be departing at source station given by passenger. So when passanger   gives date for checking trains availability we can get the day of week from the date and check in the table if the train is scheduled for that day of week or       not.  
