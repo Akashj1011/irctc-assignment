@@ -8,19 +8,19 @@ There are three tables created:
 
 Schemas:
 
-CREATE TABLE irctc.schedule (
-  scheduleId varchar(120) not null,
-  journeyId varchar(120) not null,
-  trainId varchar(120) not null,
-  sourceStation varchar(120) NOT NULL,
-  destinationStation varchar(120) NOT NULL,
-  departureTime time not null,
-  arrivalTime time not null,
-  timeTaken int not null,
-  departureDayOfWeek int not null,
-  arrivalDayOfWeek int not null,
-  PRIMARY KEY (scheduleId)
-);
+CREATE TABLE irctc.schedule (  
+  scheduleId varchar(120) not null,  
+  journeyId varchar(120) not null,  
+  trainId varchar(120) not null,  
+  sourceStation varchar(120) NOT NULL,  
+  destinationStation varchar(120) NOT NULL,  
+  departureTime time not null,  
+  arrivalTime time not null,  
+  timeTaken int not null,  
+  departureDayOfWeek int not null,  
+  arrivalDayOfWeek int not null,    
+  PRIMARY KEY (scheduleId). 
+);  
   
   This table basically stores all the information of all the trains from given source to destination.
   
