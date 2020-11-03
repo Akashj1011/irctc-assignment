@@ -60,14 +60,16 @@ This table saves information of stations.
 - INSERT INTO irctc.schedule( scheduleId, trainId, sourceStation, destinationStation, departureTime, arrivalTime,timeTaken, departureDayOfWeek, arrivalDayOfWeek, journeyId) VALUES   
 ( 's1', 't1', 'Ahmedabad', 'Bangalore', '12:00', '18:00', 6, 1,1, 'jrn1'),  
 ( 's2', 't2', 'Srinager', 'Chennai', '12:00', '18:00', 54, 6,1, 'jrn2'),  
-( 's3', 't3', 'Lucknow', 'Kolkata', '12:00', '12:00', 24, 6, 7, 'jrn3');  
+( 's3', 't3', 'Lucknow', 'Kolkata', '12:00', '12:00', 24, 6, 7, 'jrn3'),  
+( 's4', 't4', 'Srinager', 'Chennai', '14:00', '18:00', 52, 6,1, 'jrn4');     
     
  - select * from irctc.schedule;  
    
  - Insert INTO irctc.train(trainId, trainName, startStation, endStation) Values  
 ('t1', 'AbadToBlr', 'Jaipur', 'Cochi'),  
 ('t2', 'KashmirToCochi', 'Kashmir', 'Cochi'),  
-('t3', 'DelhiToKolkta', 'Delhi', 'Kolkata');  
+('t3', 'DelhiToKolkta', 'Delhi', 'Kolkata'),  
+('t4', 'SrinagerToTrivandrum', 'Srinager', 'Trivandrum');  
   
 - select * from irctc.train;  
   
