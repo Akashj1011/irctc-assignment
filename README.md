@@ -6,9 +6,9 @@ There are three tables created:
 2. train
 3. station
   
-Schemas:
+- Schemas:
   
-CREATE TABLE irctc.schedule (  
+- CREATE TABLE irctc.schedule (  
   scheduleId varchar(120) not null,  
   journeyId varchar(120) not null,  
   trainId varchar(120) not null,  
@@ -22,8 +22,8 @@ CREATE TABLE irctc.schedule (
   PRIMARY KEY (scheduleId). 
 );  
     
-  This table basically stores all the information of all the trains from given source to destination.  
-    
+  - This table basically stores all the information of all the trains from given source to destination.  
+      
   scheduleId: Primary Key.    
   journeyId: Suppose the train is from Kolkata to Ahmedabad. So the stops in between are Kolkata-->Patna-->Lucknow-->Indore-->Delhi-->Ahmedabad. So for all the       schedule eq: from Kolkata-->Indore or Delhi-->Ahmedabad the journeyId will be same. It can be used to know all the schedules for a given journey. It can also be   used when the train is delayed and the timings for all the subsequent departures and arrrivals needed to be changed.   
   trainId : Foreign key from train table. It gives information about the train.   
@@ -36,7 +36,7 @@ CREATE TABLE irctc.schedule (
   arrivalDayOfWeek : Similar to departureDayOfWeek. Value ranges from [1..7] i.e from Sunday to Saturday. 
 
 
-CREATE TABLE irctc.train (  
+- CREATE TABLE irctc.train (  
   trainId varchar(120) not null,  
   trainName varchar(120) not null,  
   startStation varchar(120) NOT NULL,  
@@ -44,14 +44,14 @@ CREATE TABLE irctc.train (
   PRIMARY KEY (trainId). 
 );  
     
-This tables is used to save information regarding train.  
+- This tables is used to save information regarding train.  
   trainId : Primary Key
   trainName : Name of Train. 
   startStation : Start Station of Train. 
   endStation : End Station of Train. 
   
   
-CREATE TABLE irctc.station (  
+- CREATE TABLE irctc.station (  
   stationId varchar(120) not null,  
   stationName varchar(120) not null,  
   PRIMARY KEY (stationId)  
@@ -63,22 +63,22 @@ INSERT INTO irctc.schedule( scheduleId, trainId, sourceStation, destinationStati
 ( 's2', 't2', 'Srinager', 'Chennai', '12:00', '18:00', 54, 6,1, 'jrn2'),  
 ( 's3', 't3', 'Lucknow', 'Kolkata', '12:00', '12:00', 24, 6, 7, 'jrn3');  
     
- select * from irctc.schedule;  
+ - select * from irctc.schedule;  
    
- Insert INTO irctc.train(trainId, trainName, startStation, endStation) Values  
+ - Insert INTO irctc.train(trainId, trainName, startStation, endStation) Values  
 ('t1', 'AbadToBlr', 'Jaipur', 'Cochi'),  
 ('t2', 'KashmirToCochi', 'Kashmir', 'Cochi'),  
 ('t3', 'DelhiToKolkta', 'Delhi', 'Kolkata');  
   
-select * from irctc.train;  
+- select * from irctc.train;  
   
-CREATE TABLE irctc.station (  
+- CREATE TABLE irctc.station (  
 stationId varchar(120) not null,  
 stationName varchar(120) not null,  
 PRIMARY KEY (stationId). 
 );  
   
-Insert INTO irctc.station(stationId, stationName) values  
+- Insert INTO irctc.station(stationId, stationName) values  
 ('stn1', 'Kolkata'),   
 ('stn2', 'Mumbai'),  
 ('stn3', 'Ahmedabad'),  
@@ -91,12 +91,12 @@ Insert INTO irctc.station(stationId, stationName) values
 ('stn10', 'Bangalore'),  
 ('stn11', 'Srinagar');  
     
-There are three Rest Apis as per the requirements:  
+- There are three Rest Apis as per the requirements:  
 1. TrainsOnDepartureDay  
 2. TrainsOnArrivalDay  
 3. stations  
   
-1. TrainsOnDepartureDay : RESTful API method for getting all trains available on given departure day and between particular time range.  
+- TrainsOnDepartureDay : RESTful API method for getting all trains available on given departure day and between particular time range.  
 - Input Params are : sourceStation,destinationStation,departureDay,timeRange1,timeRange2.  
   timeRange1 and timeRange2 are used to select time range of day between which user needs to book the train.  
   Eg:  
