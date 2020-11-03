@@ -91,14 +91,14 @@ PRIMARY KEY (stationId).
 ('stn10', 'Bangalore'),  
 ('stn11', 'Srinagar');  
     
-* Rest Apis. 
+# Rest Apis. 
 - There are three Rest Apis as per the requirements:  
 1. TrainsOnDepartureDay  
 2. TrainsOnArrivalDay  
 3. stations  
   
 - TrainsOnDepartureDay : RESTful API method for getting all trains available on given departure day and between particular time range.  
-- Input Params are : sourceStation,destinationStation,departureDay,timeRange1,timeRange2.  
+  Input Params are : sourceStation,destinationStation,departureDay,timeRange1,timeRange2.  
   timeRange1 and timeRange2 are used to select time range of day between which user needs to book the train.  
   Eg:  
   sourceStation : Srinager  
@@ -109,14 +109,14 @@ PRIMARY KEY (stationId).
     
   The format of departurre day is YYYY-MM-dd and timeRange1, timeRange2 is hh:mm
   
-  - TrainsOnArrivalDay : RESTful API method for getting all trains available to reach on desired arrival day.  
-  - Input Params are : sourceStation,destinationStation,arrivalDay
+- TrainsOnArrivalDay : RESTful API method for getting all trains available to reach on desired arrival day.  
+  Input Params are : sourceStation,destinationStation,arrivalDay
     Eg:     
     sourceStation : Lucknow    
     destinationStation : Kolkata    
     departureDay : 2020-11-08   
    
-   - stations : RESTful API method for getting all the Station Names. 
+- stations : RESTful API method for getting all the Station Names. 
    
    
   
