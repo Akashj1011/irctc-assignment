@@ -117,6 +117,14 @@ PRIMARY KEY (stationId).
     departureDay : 2020-11-08   
    
 - stations : RESTful API method for getting all the Station Names. 
+
+<img width="1069" alt="Screenshot 2020-11-04 at 12 37 43 AM" src="https://user-images.githubusercontent.com/21036288/98036500-24425800-1e40-11eb-8da5-5b11cab7c3ca.png">
+<img width="1090" alt="Screenshot 2020-11-04 at 12 40 06 AM" src="https://user-images.githubusercontent.com/21036288/98036510-286e7580-1e40-11eb-9381-692ab340f6e1.png">
+<img width="1082" alt="Screenshot 2020-11-04 at 12 40 23 AM" src="https://user-images.githubusercontent.com/21036288/98036511-29070c00-1e40-11eb-96da-f965380bb958.png">
+<img width="1084" alt="Screenshot 2020-11-04 at 12 42 40 AM" src="https://user-images.githubusercontent.com/21036288/98036512-299fa280-1e40-11eb-9b8f-f8fd6bd1b008.png">
+<img width="1086" alt="Screenshot 2020-11-04 at 12 42 57 AM" src="https://user-images.githubusercontent.com/21036288/98036513-2a383900-1e40-11eb-94b5-5ecdf9565dab.png">
+<img width="1076" alt="Screenshot 2020-11-04 at 12 43 10 AM" src="https://user-images.githubusercontent.com/21036288/98036514-2ad0cf80-1e40-11eb-9f64-5b74f4961765.png">
+
    
    
   
