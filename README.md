@@ -1,7 +1,6 @@
-# irctc-assignment
   
-* Database Definition
-There are three tables created:
+# Database Definition
+There are three tables created for database irctc:
 1. schedule
 2. train
 3. station
