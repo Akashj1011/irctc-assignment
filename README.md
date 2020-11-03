@@ -40,7 +40,7 @@ There are three tables created for database irctc:
   trainName varchar(60) not null,  
   startStation varchar(60) NOT NULL,  
   endStation varchar(60) NOT NULL,  
-  PRIMARY KEY (trainId). 
+  PRIMARY KEY (trainId)  
 );  
       
 - This tables is used to save information regarding train.  
