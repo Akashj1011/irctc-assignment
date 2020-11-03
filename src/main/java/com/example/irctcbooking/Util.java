@@ -18,6 +18,7 @@ public class Util {
     public boolean validateDate(String departureDay) {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+            simpleDateFormat.setLenient(false);
             simpleDateFormat.parse(departureDay);
 
         } catch (Exception ex) {
@@ -34,6 +35,7 @@ public class Util {
 
             String strDateFormat = "HH:mm";
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(strDateFormat);
+            simpleDateFormat.setLenient(false);
             simpleDateFormat.parse(timeRange1);
             simpleDateFormat.parse(timeRange2);
 

@@ -14,7 +14,7 @@ public class TrainInfoController {
     private TrainInfoService trainInfoService;
 
     // RESTful API method for getting all trains available on given departure day and between particular time range.
-    @GetMapping("/TrainsOnDepartureDay")
+    @GetMapping("/trainsOnDepartureDay")
     public ResponseEntity<?> getTrainsForTimeRange(@RequestParam String sourceStation,
                                  @RequestParam String destinationStation,
                                  @RequestParam String departureDay,
@@ -34,7 +34,7 @@ public class TrainInfoController {
     }
 
     // RESTful API method for getting all trains available to reach on desired arrival day.
-    @GetMapping("/TrainsOnArrivalDay")
+    @GetMapping("/trainsOnArrivalDay")
     public ResponseEntity<?> getTrainsForDestDay(@RequestParam String sourceStation,
                                  @RequestParam String destinationStation,
                                  @RequestParam String arrivalDay
