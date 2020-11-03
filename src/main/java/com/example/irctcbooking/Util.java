@@ -1,33 +1,19 @@
 package com.example.irctcbooking;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.List;
+import org.slf4j.LoggerFactory;
 
-@Service
-public class BookingService {
+@Component
+public class Util {
+    private static final Logger logger = LoggerFactory.getLogger(Util.class);
 
-    @Autowired
-    private DAO bookingDao;
-
-    public List<TrainScheduleInfo> getTrains(String sourceStation, String destStation, String departureDay, String timeRange1, String timeRange2) {
-        validateDate(departureDay);
-        validateTime(timeRange1, timeRange2);
-        int weekOfDay = getWeekOfDay(departureDay);
-        return bookingDao.getTrains(sourceStation, destStation, weekOfDay, timeRange1, timeRange2, departureDay);
-
-    }
-
-    public List<TrainScheduleInfo> getTrainsOnArrivalDay(String sourceStation, String destStation, String arrivalDay) {
-        validateDate(arrivalDay);
-        int weekOfDay = getWeekOfDay(arrivalDay);
-        return bookingDao.getTrainsOnArrivalDay(sourceStation, destStation, weekOfDay, arrivalDay);
-    }
-
+    // Check if date is in proper format
     public boolean validateDate(String departureDay) {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -40,6 +26,7 @@ public class BookingService {
         return true;
     }
 
+    // Check if time is in proper format
     public boolean validateTime(String timeRange1, String timeRange2) {
         try {
 
@@ -56,17 +43,30 @@ public class BookingService {
 
     }
 
-    public int getWeekOfDay(String day) {
+    // Get the day of week from the Date. Ranges from [1..7] Starting fromm Sunday to Saturday
+    public int getDayOfWeek(String day) {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
             Date date = simpleDateFormat.parse(day);
-            Calendar cal  = Calendar.getInstance();
+            Calendar cal = Calendar.getInstance();
             cal.setTime(date);
             return cal.get(Calendar.DAY_OF_WEEK);
-        }
-        catch(Exception ex) {
+        } catch (Exception ex) {
 
         }
         return -1;
     }
- }
+
+    // Get the diff in no of days between departure and Arrival Date.
+    public int getDiffOfDaysBetnDepartureAndArrival(int arrivalDayOfWeek, int departureDayOfWeek) {
+        int diffInDays = 0;
+        if (arrivalDayOfWeek != departureDayOfWeek) {
+            if (arrivalDayOfWeek < departureDayOfWeek) {
+                diffInDays = 7 - departureDayOfWeek + arrivalDayOfWeek;
+            } else {
+                diffInDays = arrivalDayOfWeek - departureDayOfWeek;
+            }
+        }
+        return diffInDays;
+    }
+}
