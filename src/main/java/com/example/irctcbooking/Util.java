@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+
 import org.slf4j.LoggerFactory;
 
 @Component
@@ -20,6 +21,7 @@ public class Util {
             simpleDateFormat.parse(departureDay);
 
         } catch (Exception ex) {
+            logger.error("Error in method validateDate : {}", ex);
             return false;
         }
 
@@ -36,6 +38,7 @@ public class Util {
             simpleDateFormat.parse(timeRange2);
 
         } catch (Exception ex) {
+            logger.error("Error in method validateTime : {}", ex);
             return false;
         }
 
@@ -52,7 +55,7 @@ public class Util {
             cal.setTime(date);
             return cal.get(Calendar.DAY_OF_WEEK);
         } catch (Exception ex) {
-
+            logger.error("Error in method  getDayOfWeek : {}", ex);
         }
         return -1;
     }
