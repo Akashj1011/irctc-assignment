@@ -125,6 +125,19 @@ PRIMARY KEY (stationId).
 <img width="1086" alt="Screenshot 2020-11-04 at 12 42 57 AM" src="https://user-images.githubusercontent.com/21036288/98036513-2a383900-1e40-11eb-94b5-5ecdf9565dab.png">
 <img width="1076" alt="Screenshot 2020-11-04 at 12 43 10 AM" src="https://user-images.githubusercontent.com/21036288/98036514-2ad0cf80-1e40-11eb-9f64-5b74f4961765.png">
 
+
+# Code Structure
+- All the files are in src/main/java/com/example/irctcbooking
+- Controller: TrainInfoController: Contains the rest endpoints
+- Service: TrainInfoService
+- Dao: TrainInfoDao: Communicates with Database
+- Util: Util.java: Have common methods
+- POJO: TrainScheduleInfo: POJO which has result object for trainInfo. 
+- resources/application.properties : Have all the database properties.
+
+# Code Flow:
+- With the input parameters We will validate the date and time if given params in proper format or not.  
+- Then Using the date given in input parrams for getting trains, we are getting the day of week and with day of week, and other parameters we are querying the database and creating the result object.
    
    
   
