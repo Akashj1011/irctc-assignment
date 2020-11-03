@@ -8,11 +8,11 @@ There are three tables created for database irctc:
 - Schemas:
   
 - CREATE TABLE irctc.schedule (  
-  scheduleId varchar(120) not null,  
-  journeyId varchar(120) not null,  
-  trainId varchar(120) not null,  
-  sourceStation varchar(120) NOT NULL,  
-  destinationStation varchar(120) NOT NULL,  
+  scheduleId varchar(60) not null,  
+  journeyId varchar(60) not null,  
+  trainId varchar(60) not null,  
+  sourceStation varchar(60) NOT NULL,  
+  destinationStation varchar(60) NOT NULL,  
   departureTime time not null,  
   arrivalTime time not null,  
   timeTaken int not null,  
@@ -36,10 +36,10 @@ There are three tables created for database irctc:
 
 
 - CREATE TABLE irctc.train (  
-  trainId varchar(120) not null,  
-  trainName varchar(120) not null,  
-  startStation varchar(120) NOT NULL,  
-  endStation varchar(120) NOT NULL,  
+  trainId varchar(60) not null,  
+  trainName varchar(60) not null,  
+  startStation varchar(60) NOT NULL,  
+  endStation varchar(60) NOT NULL,  
   PRIMARY KEY (trainId). 
 );  
       
@@ -51,8 +51,8 @@ There are three tables created for database irctc:
   
   
 - CREATE TABLE irctc.station (  
-  stationId varchar(120) not null,  
-  stationName varchar(120) not null,  
+  stationId varchar(60) not null,  
+  stationName varchar(60) not null,  
   PRIMARY KEY (stationId)  
 );  
 This table saves information of stations.  
