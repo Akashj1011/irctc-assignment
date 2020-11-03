@@ -90,10 +90,23 @@ Insert INTO irctc.station(stationId, stationName) values
 ('stn9', 'Chennai'),  
 ('stn10', 'Bangalore'),  
 ('stn11', 'Srinagar');  
+    
+There are three Rest Apis as per the requirements:  
+1. TrainsOnDepartureDay  
+2. TrainsOnArrivalDay  
+3. stations  
   
-
-
-
+1. TrainsOnDepartureDay : RESTful API method for getting all trains available on given departure day and between particular time range.  
+- Input Params are : sourceStation,destinationStation,departureDay,timeRange1,timeRange2.  
+  timeRange1 and timeRange2 are used to select time range of day between which user needs to book the train.  
+  Eg:  
+  sourceStation : Srinager  
+  destinationStation : Chennai  
+  departureDay : 2020-11-07  
+  timeRange1 : 10:00  
+  timeRange2 : 16:00  
+    
+  The format of departurre day is YYYY-MM-dd and timeRange1, timeRange2 is hh:mm
 
 
 
