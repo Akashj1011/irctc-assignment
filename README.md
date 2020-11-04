@@ -23,7 +23,8 @@ There are three tables created for database irctc:
   timeTaken int not null,  
   departureDayOfWeek int not null,  
   arrivalDayOfWeek int not null,    
-  PRIMARY KEY (scheduleId). 
+  PRIMARY KEY (scheduleId),  
+  FOREIGN KEY (trainId) REFERENCES irctc.train(trainId)  
 );  
     
  - This table basically stores all the information of all the trains from given source to destination.  
