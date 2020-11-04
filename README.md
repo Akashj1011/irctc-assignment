@@ -139,6 +139,11 @@ PRIMARY KEY (stationId).
 # Code Flow:
 - With the input parameters We will validate the date and time if given params in proper format or not.  
 - Then Using the date given in input parrams for getting trains, we are getting the day of week and with day of week, and other parameters we are querying the database and creating the result object.
+
+# Database Snapshots. 
+
+<img width="1419" alt="Screenshot 2020-11-04 at 10 42 06 AM" src="https://user-images.githubusercontent.com/21036288/98071779-7b6d1a80-1e8a-11eb-81fe-48b91ea82034.png">
+<img width="1423" alt="Screenshot 2020-11-04 at 10 42 18 AM" src="https://user-images.githubusercontent.com/21036288/98071784-8162fb80-1e8a-11eb-87a0-66cc982f3342.png">
    
    
   
