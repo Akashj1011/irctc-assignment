@@ -1,7 +1,8 @@
 # Requirements:
  - Given a sourceStation, destinationStation, departure date, time range for departure, find all the trains available.  
  - Given a sourceStation, destinationStation, arrival date find all the trains available.  
-   
+ - Give list of all available stations.  
+     
 # Database Definition
 There are three tables created for database irctc:
 1. schedule
