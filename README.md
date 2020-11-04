@@ -120,7 +120,8 @@ PRIMARY KEY (stationId).
 - stations : RESTful API method for getting all the Station Names. 
 
 <img width="1146" alt="Screenshot 2020-11-04 at 2 43 06 AM" src="https://user-images.githubusercontent.com/21036288/98041849-9c148080-1e48-11eb-8d3e-d12fc3c255ec.png">
-<img width="1134" alt="Screenshot 2020-11-04 at 2 43 23 AM" src="https://user-images.githubusercontent.com/21036288/98041861-a0409e00-1e48-11eb-9e7c-90a627eb700d.png">
+<img width="1134" alt="Screenshot 2020-11-04 at 2 43 23 AM" src="https://user-images.githubusercontent.com/21036288/98041861-a0409e00-1e48-11eb-9e7c-90a627eb700d.png">  
+<img width="1075" alt="Screenshot 2020-11-04 at 10 47 32 AM" src="https://user-images.githubusercontent.com/21036288/98072083-33022c80-1e8b-11eb-9641-c007cd4e9a10.png">
 <img width="1091" alt="Screenshot 2020-11-04 at 2 43 34 AM" src="https://user-images.githubusercontent.com/21036288/98041864-a0d93480-1e48-11eb-91e0-64eb3d3d9393.png">
 <img width="1093" alt="Screenshot 2020-11-04 at 2 43 47 AM" src="https://user-images.githubusercontent.com/21036288/98041866-a171cb00-1e48-11eb-8b42-029bdbf45251.png">
 <img width="1090" alt="Screenshot 2020-11-04 at 2 44 05 AM" src="https://user-images.githubusercontent.com/21036288/98041867-a20a6180-1e48-11eb-9c2a-693e96b77ad5.png">
