@@ -4,6 +4,7 @@
  - Give list of all available stations.  
      
 # Database Definition
+- Database used MySQL
 There are three tables created for database irctc:
 1. schedule
 2. train
@@ -149,6 +150,13 @@ PRIMARY KEY (stationId).
 
 <img width="1419" alt="Screenshot 2020-11-04 at 10 42 06 AM" src="https://user-images.githubusercontent.com/21036288/98071779-7b6d1a80-1e8a-11eb-81fe-48b91ea82034.png">
 <img width="1423" alt="Screenshot 2020-11-04 at 10 42 18 AM" src="https://user-images.githubusercontent.com/21036288/98071784-8162fb80-1e8a-11eb-87a0-66cc982f3342.png">
+
+# How to run Project
+- Check out the code from github. 
+- Change resources/application.properies file to point to local mysql db.  
+- Create database irctc and all 3 table using the schema and command provided above.  
+- Insert values in tables as specified above in Readme. 
+- Run the application and call the Rest Apis through postman. 
    
    
   
