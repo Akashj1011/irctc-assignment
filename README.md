@@ -149,7 +149,7 @@ PRIMARY KEY (stationId).
 
 # Database Snapshots. 
 
-<img width="1419" alt="Screenshot 2020-11-04 at 10 42 06 AM" src="https://user-images.githubusercontent.com/21036288/98071779-7b6d1a80-1e8a-11eb-81fe-48b91ea82034.png">
+<img width="1516" alt="Screenshot 2020-11-04 at 7 58 30 PM" src="https://user-images.githubusercontent.com/21036288/98123714-3a035c00-1ed8-11eb-8ab7-bc3d303e30de.png">
 <img width="1423" alt="Screenshot 2020-11-04 at 10 42 18 AM" src="https://user-images.githubusercontent.com/21036288/98071784-8162fb80-1e8a-11eb-87a0-66cc982f3342.png">
 
 # How to run Project
